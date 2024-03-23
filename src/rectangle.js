@@ -38,7 +38,7 @@
 /* --------------Important Step Below ------------ */
 // import the polygon class using the CommonJS require() function
 // https://nodejs.org/api/modules.html#modules-commonjs-modules
-// const { Polygon } = require('./polygon');
+const { Polygon } = require('./polygon');
 
 /**
  * rectangle class
@@ -65,6 +65,9 @@ class Rectangle extends Polygon {
    */
   constructor(height, width) {
     // write your code here
+    super(sides);
+    this.height = height;
+    this.width = width;
   }
 
   /**
@@ -73,6 +76,9 @@ class Rectangle extends Polygon {
    */
   isValid() {
     // write your code here
+    if (this.height > 0 && this.width > 0) {
+      return true;
+    } return false;
   }
 
   /**
@@ -83,6 +89,7 @@ class Rectangle extends Polygon {
    */
   area() {
     // write your code here
+    return this.height * this.width;
   }
 }
 

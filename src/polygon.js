@@ -49,6 +49,7 @@ class Polygon {
     // write your code here
     let number = 0;
 
+    // eslint-disable-next-line no-plusplus
     for (let i = 0; i < this.sides.length; i++) {
       number += this.sides[i];
     }
