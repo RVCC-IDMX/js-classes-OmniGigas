@@ -47,10 +47,10 @@ class Polygon {
    */
   perimeter() {
     // write your code here
-    const number = 0;
+    let number = 0;
 
     for (let i = 0; i < this.sides.length; i++) {
-      sum += this.sides[i];
+      number += this.sides[i];
     }
     return number;
   }
