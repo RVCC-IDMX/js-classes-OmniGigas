@@ -65,9 +65,10 @@ class Rectangle extends Polygon {
    */
   constructor(height, width) {
     // write your code here
-    super(sides);
+    super([height, width, height, width]);
     this.height = height;
     this.width = width;
+    this.name = 'Rectangle';
   }
 
   /**
