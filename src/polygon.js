@@ -30,6 +30,8 @@
 class Polygon {
   constructor(sides) {
     // write your code here
+    this.sides = sides;
+    this.name = 'Polygon';
   }
 
   /**
@@ -37,6 +39,7 @@ class Polygon {
    */
   count() {
     // write your code here
+    return this.sides.length;
   }
 
   /**
@@ -44,6 +47,12 @@ class Polygon {
    */
   perimeter() {
     // write your code here
+    const number = 0;
+
+    for (let i = 0; i < this.sides.length; i++) {
+      sum += this.sides[i];
+    }
+    return number;
   }
 
   /**
@@ -51,6 +60,7 @@ class Polygon {
    */
   sayName() {
     // write your code here
+    return this.name;
   }
 }
 
