@@ -39,7 +39,7 @@
 /* --------------Important Step Below ------------ */
 // import the polygon class using the CommonJS require() function
 // https://nodejs.org/api/modules.html#modules-commonjs-modules
-// const { Polygon } = require('./polygon');
+const { Polygon } = require('./polygon');
 
 /**
  * Square class
@@ -65,6 +65,10 @@ class Square extends Rectangle {
    */
   constructor(side) {
     // write your code here
+    super([side]);
+    this.side = height;
+    this.side = width;
+    this.name = 'Square';
   }
 
   /**
@@ -73,9 +77,10 @@ class Square extends Rectangle {
    */
   getSide() {
     // write your code here
+    return this.side;
   }
 }
 
-module.exports = {
+export default {
   Square,
 };

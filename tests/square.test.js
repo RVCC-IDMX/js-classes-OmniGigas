@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-const { Square } = require('../src/square');
+const { Square } = require('../src/square').default;
 
 test('Square', () => {
   const square1 = new Square(12);
