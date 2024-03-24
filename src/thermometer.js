@@ -27,14 +27,17 @@
  */
 class Thermometer {
   // write your code here for the private class field called celsius
+  #class celsius {
 
-  /**
-   * @constructor
-   * @param {number} celsius
-   */
-  constructor(celsius) {
-    // write your code here
-  }
+}
+
+/**
+ * @constructor
+ * @param {number} celsius
+ */
+constructor(celsius) {
+  // write your code here
+}
 
   /*  -------- celsius -------------------*/
   /**
@@ -44,8 +47,8 @@ class Thermometer {
    * @description - returns the celsius temperature
    * */
   get celsius() {
-    // write your code here
-  }
+  // write your code here
+}
 
   /**
    * @setter celsius
@@ -54,8 +57,8 @@ class Thermometer {
    * @description - sets the celsius temperature
    */
   set celsius(tempCelsius) {
-    // write your code here
-  }
+  // write your code here
+}
 
   /*  -------- kelvin -------------------*/
   /**
@@ -65,8 +68,8 @@ class Thermometer {
    * @description - returns the kelvin temperature
    */
   get kelvin() {
-    // write your code here
-  }
+  // write your code here
+}
 
   /**
    * @setter kelvin
@@ -75,8 +78,8 @@ class Thermometer {
    * @description - sets the kelvin temperature
    */
   set kelvin(tempKelvin) {
-    // write your code here
-  }
+  // write your code here
+}
 
   /*  -------- fahrenheit -------------------*/
   /**
@@ -86,8 +89,8 @@ class Thermometer {
    * @description - returns the fahrenheit temperature
    */
   get fahrenheit() {
-    // write your code here
-  }
+  // write your code here
+}
 
   /**
    * @setter fahrenheit
@@ -96,26 +99,26 @@ class Thermometer {
    * @description - sets the fahrenheit temperature
    */
   set fahrenheit(tempFahrenheit) {
-    // write your code here
-  }
+  // write your code here
+}
 
-  /**
-   * @method toString
-   * @param {string} unit - 'C', 'K', 'F'
-   * @returns {string} - the temperature in the specified unit
-   * @memberof Thermometer
-   * @description - returns a string with the temperature in the specified unit
-   *
-   * Example: Assuming an instance of this class is 0°C
-   * toString('C') returns '0°C'
-   * toString('K') returns '273.15K' - notice no ° symbol
-   * toString('F') returns '32°C'
-   * Any other value, or no value, for unit returns the celsius value + '°C'
-   *
-   */
-  toString(unit) {
-    // write your code here
-  }
+/**
+ * @method toString
+ * @param {string} unit - 'C', 'K', 'F'
+ * @returns {string} - the temperature in the specified unit
+ * @memberof Thermometer
+ * @description - returns a string with the temperature in the specified unit
+ *
+ * Example: Assuming an instance of this class is 0°C
+ * toString('C') returns '0°C'
+ * toString('K') returns '273.15K' - notice no ° symbol
+ * toString('F') returns '32°C'
+ * Any other value, or no value, for unit returns the celsius value + '°C'
+ *
+ */
+toString(unit) {
+  // write your code here
+}
 }
 
 module.exports = {

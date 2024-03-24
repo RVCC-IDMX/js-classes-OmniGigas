@@ -90,7 +90,10 @@ class Rectangle extends Polygon {
    */
   area() {
     // write your code here
-    return this.height * this.width;
+    if (this.isValid()) {
+      return this.height * this.width;
+    }
+    return 0;
   }
 }
 
