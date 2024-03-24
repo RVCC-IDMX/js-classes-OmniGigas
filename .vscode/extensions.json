@@ -1,6 +1,7 @@
 {
 	"recommendations": [
 		"dbaeumer.vscode-eslint",
-    "aaron-bond.better-comments"
+		"aaron-bond.better-comments",
+		"ritwickdey.liveserver"
 	]
 }
