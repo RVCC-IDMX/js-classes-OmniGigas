@@ -27,17 +27,16 @@
  */
 class Thermometer {
   // write your code here for the private class field called celsius
-  #class celsius {
+  #celsius;
 
-}
-
-/**
+  /**
  * @constructor
  * @param {number} celsius
  */
-constructor(celsius) {
-  // write your code here
-}
+  constructor(celsius) {
+    // write your code here
+    this.#celsius = celsius;
+  }
 
   /*  -------- celsius -------------------*/
   /**
@@ -47,8 +46,9 @@ constructor(celsius) {
    * @description - returns the celsius temperature
    * */
   get celsius() {
-  // write your code here
-}
+    // write your code here
+    return this.#celsius;
+  }
 
   /**
    * @setter celsius
@@ -57,8 +57,9 @@ constructor(celsius) {
    * @description - sets the celsius temperature
    */
   set celsius(tempCelsius) {
-  // write your code here
-}
+    // write your code here
+    this.#celsius = tempCelsius;
+  }
 
   /*  -------- kelvin -------------------*/
   /**
@@ -68,8 +69,9 @@ constructor(celsius) {
    * @description - returns the kelvin temperature
    */
   get kelvin() {
-  // write your code here
-}
+    // write your code here
+    return this.#celsius + 273.15;
+  }
 
   /**
    * @setter kelvin
@@ -78,8 +80,9 @@ constructor(celsius) {
    * @description - sets the kelvin temperature
    */
   set kelvin(tempKelvin) {
-  // write your code here
-}
+    // write your code here
+    this.#celsius = tempKelvin - 273.15;
+  }
 
   /*  -------- fahrenheit -------------------*/
   /**
@@ -89,8 +92,9 @@ constructor(celsius) {
    * @description - returns the fahrenheit temperature
    */
   get fahrenheit() {
-  // write your code here
-}
+    // write your code here
+    return ((this.#celsius * 9) / 5) + 32;
+  }
 
   /**
    * @setter fahrenheit
@@ -99,10 +103,11 @@ constructor(celsius) {
    * @description - sets the fahrenheit temperature
    */
   set fahrenheit(tempFahrenheit) {
-  // write your code here
-}
+    // write your code here
+    this.#celsius = ((tempFahrenheit - 32) * 5) / 9;
+  }
 
-/**
+  /**
  * @method toString
  * @param {string} unit - 'C', 'K', 'F'
  * @returns {string} - the temperature in the specified unit
@@ -112,13 +117,20 @@ constructor(celsius) {
  * Example: Assuming an instance of this class is 0°C
  * toString('C') returns '0°C'
  * toString('K') returns '273.15K' - notice no ° symbol
- * toString('F') returns '32°C'
+ * toString('F') returns '32°F'
  * Any other value, or no value, for unit returns the celsius value + '°C'
  *
  */
-toString(unit) {
-  // write your code here
-}
+  toString(unit) {
+    // write your code here
+    if (unit === 'K') {
+      return `${this.kelvin}K`;
+    }
+    if (unit === 'F') {
+      return `${this.fahrenheit}°F`;
+    }
+    return `${this.celsius}°C`;
+  }
 }
 
 module.exports = {
